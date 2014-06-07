@@ -72,9 +72,9 @@ public class JtsGeometry implements Shape {
 
     //Check geom validity; use helpful error
     // TODO add way to conditionally skip at your peril later
-    IsValidOp isValidOp = new IsValidOp(geom);
+    /*IsValidOp isValidOp = new IsValidOp(geom);
     if (!isValidOp.isValid())
-      throw new InvalidShapeException(isValidOp.getValidationError().toString());
+      throw new InvalidShapeException(isValidOp.getValidationError().toString());*/
     this.geom = geom;
 
     this.hasArea = !((geom instanceof Lineal) || (geom instanceof Puntal));
